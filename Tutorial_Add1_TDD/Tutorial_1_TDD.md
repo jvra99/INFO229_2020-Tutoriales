@@ -2,9 +2,7 @@
 Este tutorial tiene como objetivo en ofrecernos herramientas para poder realizar un trabajo de mejor calidad y cuidado.
 
 ## ¿Que es TDD?
-  Es una metodología de desarrollo cuyo objetivo es crear primero las pruebas y luego escribir el software. Es decir, desarrollo guiado por pruebas.Es una 
-metodología de desarrollo cuyo objetivo es crear primero las pruebas y luego escribir el software. Sus siglas en Inglés son: **Test Driven Development** y 
-en español significa: **Desarrollo guiado por pruebas**.
+  Es una metodología de desarrollo cuyo objetivo es crear primero las pruebas y luego escribir el software. Sus siglas en Inglés son: **Test Driven Development** y en español significa: **Desarrollo guiado por pruebas**.
 
 ## ¿Porque es importante aplicarlo?
   Esta metodología se ha convertido en una muy popular entre los desarrolladores ya que es bastante sencilla y permite alcanzar la máxima calidad posible 
@@ -71,7 +69,7 @@ calculadoras).
 
 **Por cierto, los tests también deben empezar con test_.**
 
-## PASO 2: Ejecutar la prueba y comprobar que falla
+### PASO 2: Ejecutar la prueba y comprobar que falla
 
 Ahora, desde el directorio que contiene el fichero ejecutamos los tests de autodescubrimiento
 
@@ -92,7 +90,7 @@ FAILED (errors=1)
 ```
 Como era obvio se encontrará un test, se ejecutará y fallará.
 
-## PASO 3: Implementar el código mínimo para pasar la prueba
+### PASO 3: Implementar el código mínimo para pasar la prueba
 
 Para seguir correctamente la filosofía del TDD es esencial no implementar todo el código de golpe, sino simplemente resolver los errores de uno en uno para hacer que la prueba pase, de eso se trata que nos guíen las pruebas.
 
@@ -103,7 +101,7 @@ NameError: name 'Calculator' is not defined
 ```
 Para solucionarlo creamos la clase **Calculator** con el mínimo código:
 
-*calculator.py *
+*calculator.py*
 ```
 class Calculator:
     pass
@@ -123,7 +121,7 @@ class TestMyCalculator(unittest.TestCase):
         calc = Calculator()
         self.assertEqual(0, calc.value)
 ```
-## PASO 4: Volvemos a ejecutar la prueba hasta que pase
+### PASO 4: Volvemos a ejecutar la prueba hasta que pase
 Se supone que hemos resuelto el fallo, así que vamos a probar:
 ```
 C:\python-tdd-example>python -m unittest discover
@@ -161,7 +159,7 @@ Ran 1 test in 0.000s
 OK
 
 ```
-## PASO 5 : Refactorizar
+### PASO 5 : Refactorizar
 Nuestro código es muy sencillo, pero podemos mejorar un poco el test unitario añadiendo un método setUp() que se encargue de crear la instancia automáticamente:
 
 *test_calculator.py*
@@ -187,7 +185,7 @@ OK
 ```
 ¡Perfecto! Ya hemos desarrollado nuestro primer requisito guiándonos de las pruebas mientras hemos resuelto 2 errores.
 
-## PASO 6: Repetir el proceso para añadir otro requisito
+### PASO 6: Repetir el proceso para añadir otro requisito
 Una calculadora sin operaciones no es una calculadora, así que vamos a añadirle por lo menos un método para sumar dos valores y guardar el resultado en el atributo value.
 
 Recordemos sin embargo que estamos haciendo TDD, así que no podemos escribir el método directamente, primero tendremos que hacer un test que falle:
@@ -248,12 +246,12 @@ OK
 ```
 ¡Perfecto, ya tenemos implementada nuestra suma y nuestra metodologia aprendida! Ahora sería cuestión de ir añadiendo la resta, el producto, la división, etc.
 ## Referencias
-¿Que es el TDD?(https://ed.team/blog/que-es-el-tdd)
+¿Que es el TDD? [https://ed.team/blog/que-es-el-tdd]
 
-14 benificios de tdd (https://apiumhub.com/es/tech-blog-barcelona/beneficios-de-tdd/)
+14 benificios de tdd [https://apiumhub.com/es/tech-blog-barcelona/beneficios-de-tdd/]
 
-Clean Code y TDD: las grandes ventajas de estas prácticas (https://blogs.unsw.edu.au/nowideas/blog/2020/04/clean-code-tdd-ventajas/)
+Clean Code y TDD: las grandes ventajas de estas prácticas [https://blogs.unsw.edu.au/nowideas/blog/2020/04/clean-code-tdd-ventajas/]
 
-Qué es y cómo funciona TDD: Desarrollo a partir de las pruebas, no al revés (https://platzi.com/blog/que-es-y-como-funciona-tdd/)
+Qué es y cómo funciona TDD: Desarrollo a partir de las pruebas, no al revés [https://platzi.com/blog/que-es-y-como-funciona-tdd/]
 
-Python, ejemplo (https://www.hektorprofe.net/tutorial/ejemplo-muy-facil-tdd-python)
+Python, ejemplo [https://www.hektorprofe.net/tutorial/ejemplo-muy-facil-tdd-python]
