@@ -5,7 +5,7 @@ Tutorial para la asignatura INFO229 de la Universidad Austral de CHile que tiene
     2. Ejemplo
     3. Referencia
 
-### 1. Introducción
+# 1. Introducción
 ## ¿Que es TDD?
   Es una metodología de desarrollo cuyo objetivo es crear primero las pruebas y luego escribir el software. Sus siglas en Inglés son: **Test Driven Development** y en español significa: **Desarrollo guiado por pruebas**.
 
@@ -47,7 +47,7 @@ Para esto, se usa un ciclo de desarrollo que consta de 3 partes principales:
     2. La prueba debe pasar. (Green: Al igual que lo anterior, las herramientas muestran las pruebas que pasan en verde)
     3. Se debe mejorar el código. (Refactoring)
     
-### 2.Ejemplo
+# 2.Ejemplo
 ## Manos a la obra
 Vamos a trabajar en un ejemplo fácil e ilustrativo del procedimiento, basado en crear una clase calculadora con métodos para diferentes operaciones 
 (suma, resta, división…). Trabajaremos en esta ocasión con python.
@@ -252,7 +252,7 @@ OK
 ```
 ¡Perfecto, ya tenemos implementada nuestra suma y nuestra metodologia aprendida! Ahora sería cuestión de ir añadiendo la resta, el producto, la división, etc.
 
-### 3.Referencias
+# 3.Referencias
 ¿Que es el TDD? [https://ed.team/blog/que-es-el-tdd]
 
 14 benificios de tdd [https://apiumhub.com/es/tech-blog-barcelona/beneficios-de-tdd/]
