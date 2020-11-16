@@ -6,10 +6,10 @@ Tutorial para la asignatura INFO229 de la Universidad Austral de CHile que tiene
     3. Referencia
 
 # 1. Introducción
-## ¿Que es TDD?
+## ¿Qué es TDD?
   Es una metodología de desarrollo cuyo objetivo es crear primero las pruebas y luego escribir el software. Sus siglas en Inglés son: **Test Driven Development** y en español significa: **Desarrollo guiado por pruebas**.
 
-## ¿Porque es importante aplicarlo?
+## ¿Porqué es importante aplicarlo?
   Esta metodología se ha convertido en una muy popular entre los desarrolladores ya que es bastante sencilla y permite alcanzar la máxima calidad posible 
 de tu código como un código más robusto, más seguro, más mantenible y una mayor rapidez en el desarrollo. El desarrollo dirigido por test consiste en escribir 
 las pruebas que el código ha de superar, comprobar que fallan, implementar la mínima  cantidad de código que permita pasar las pruebas y, una vez superadas 
