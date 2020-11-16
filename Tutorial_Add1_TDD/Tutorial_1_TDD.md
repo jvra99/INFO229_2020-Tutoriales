@@ -47,7 +47,7 @@ Para esto, se usa un ciclo de desarrollo que consta de 3 partes principales:
     2. La prueba debe pasar. (Green: Al igual que lo anterior, las herramientas muestran las pruebas que pasan en verde)
     3. Se debe mejorar el código. (Refactoring)
     
-# 2.Ejemplo
+# 2. Ejemplo
 ## Manos a la obra
 Vamos a trabajar en un ejemplo fácil e ilustrativo del procedimiento, basado en crear una clase calculadora con métodos para diferentes operaciones 
 (suma, resta, división…). Trabajaremos en esta ocasión con python.
@@ -232,7 +232,7 @@ Ran 2 tests in 0.001s
 FAILED (errors=1)
 ```
 Implementamos el método add:
-*calculator.py *
+*calculator.py*
 ```
 class Calculator:
   
