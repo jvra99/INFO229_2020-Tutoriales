@@ -20,10 +20,19 @@ Tutorial para la asignatura INFO229 de la Universidad Austral de Chile que tiene
   Redis ofrece 5 estructuras de datos con los que es posible modelar la solución más adecuada para cubrir las necesidades de un proyecto:
   
     - Strings: Secuencia de bytes, es el valor básico que se puede asignar a un a Clave. Permite elementos con valor de hasta 512 MB.
-    - Lists: Colecciones de cadenas (Strings). Permite la inserción o borrado de elementos en cualquier extremo de la lista (head o tail) en un tiempo constante,     manteniendo el mismo orden en el que fueron insertados. Permite hasta 4 billones de elementos por lista.
-    - Sets: Se trata de una colección de Strings sin un orden determinado de almacenamiento. No permite valores duplicados para una misma Clave, por lo tanto, no se requiere de validaciones para verificar su existencia. Útiles para efectuar operaciones entre sets, tales como uniones, intersecciones y diferencias. Permite hasta 4 billones de elementos por colección.
-    - Sorted Sets: Similar a los Sets, con la variante que cada elemento de un grupo de datos cuenta con una calificación (Score) asociado. Este Score determinará el orden. Permite hasta 4 billones de elementos por colección.
-    - Hashes: Usado para representar objetos. Almacena conjuntos de pares Clave-Valor de cadena, asociados a una misma clave. No existe un límite de campos dentro de una Hash.
+    - Lists: Colecciones de cadenas (Strings). 
+    Permite la inserción o borrado de elementos en cualquier extremo de la lista (head o tail) en un tiempo constante,
+    manteniendo el mismo orden en el que fueron insertados. Permite hasta 4 billones de elementos por lista.
+    
+    - Sets: Se trata de una colección de Strings sin un orden determinado de almacenamiento. 
+    No permite valores duplicados para una misma Clave, por lo tanto, no se requiere de validaciones para verificar su existencia.
+    Útiles para efectuar operaciones entre sets, tales como uniones, intersecciones y diferencias. Permite hasta 4 billones de elementos por colección.
+    
+    - Sorted Sets: Similar a los Sets, con la variante que cada elemento de un grupo de datos cuenta con una calificación (Score) asociado.
+    Este Score determinará el orden. Permite hasta 4 billones de elementos por colección.}
+    
+    - Hashes: Usado para representar objetos. Almacena conjuntos de pares Clave-Valor de cadena, asociados a una misma clave. 
+    No existe un límite de campos dentro de una Hash.
     
 ### Memoria y velocidad
   Gracias a que la información queda almacenada en memoria en lugar del disco, Redis ofrece rápidos accesos en la recuperación de los datos.
@@ -32,7 +41,8 @@ Tutorial para la asignatura INFO229 de la Universidad Austral de Chile que tiene
   Redis nos da la posibilidad de escribir los datos en disco. Esto sirve como complemento cuando los datos trabajados superan el máximo de memoria con la que se dispone o para disponer de ellos ante fallas del servidor. Existen dos tipos de configuración:
 
     RDB: Intervalos específicos de conjuntos de datos (Point-in-time Snapshots)
-    Append-only-file: Cada operación es escrita en un log recibida por el servidor, de tal manera que es posible reconstruir los sets de datos una vez reiniciado
+    Append-only-file: Cada operación es escrita en un log recibida por el servidor, de tal manera que es posible 
+    reconstruir los sets de datos una vez reiniciado
 
 ### Expiracion de claves
   Cuando los datos no son requeridos después de cierto tiempo, pueden ser eliminados de manera manual o de manera automática, mediante la asignación de un «tiempo de vida» a una Clave determinada.
