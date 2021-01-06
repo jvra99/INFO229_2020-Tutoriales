@@ -265,9 +265,13 @@ $ go run if-else.go
 Hay muchas mas estrucuras y herramientas para poder programar en Go. En este link hay ams ejemplos [http://goconejemplos.com/] que les pueden ser util a la hora de sacarle provecho a este lenguaje de programacion. 
 
 # Referencias
-GO wikipedia [https://es.wikipedia.org/wiki/Go_(lenguaje_de_programaci%C3%B3n)] 
+GO wikipedia [https://es.wikipedia.org/wiki/Go_(lenguaje_de_programaci%C3%B3n)]     
+
 Ejemplos Go [http://goconejemplos.com/]
+
 ¿Como instalar go en linux? [https://comoinstalar.info/go-golang-en-linux/]
+
 Desarrollo backend con Go [https://platzi.com/backend-go/?gclid=Cj0KCQiA3NX_BRDQARIsALA3fIIjf4uNB_kwhWaJZFXaCGfA90E3qGsgmkwYn0elPTTYoW98b5vfrXMaAtmCEALw_wcB&gclsrc=aw.ds]
+
 ¿Que es GO? [https://codigofacilito.com/articulos/que-es-go]
 
